@@ -1,0 +1,33 @@
+inherit kf5
+
+NAME="kf5-libkipi"
+VERSION=16.08.2
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="KDE RAW graphics library"
+DESCRIPTION="Libkipi is a C++ interface around LibRaw library used to decode
+RAW picture files."
+
+PATCH_URI="16.08-soversion.patch"
+
+PKG_NAMES="libKF5Kipi31 libKF5Kipi-common libKF5Kipi-devel"
+libKF5Kipi31_REQUIRES="${NAME}-common"
+libKF5Kipi31_CONTENTS="
+	usr/bin/cygKF5Kipi-31.dll
+"
+libKF5Kipi_common_CONTENTS="
+	etc/postinstall/
+	usr/share/doc/
+	usr/share/icons/hicolor/*/apps/kipi.*
+	usr/share/kservicetypes5/kipiplugin.desktop
+"
+libKF5Kipi_devel_REQUIRES="libKF5XmlGui-devel libKF5Service-devel libKF5ConfigCore-devel libQt5Gui-devel"
+libKF5Kipi_devel_CONTENTS="
+	usr/include/KF5/KIPI/
+	usr/include/KF5/libkipi_version.h
+	usr/lib/cmake/KF5Kipi/
+	usr/lib/libKF5Kipi.dll.a
+"
+
+# installs a sample plugin which we don't want
+CYGCMAKE_ARGS="-DBUILD_TESTING=OFF"
