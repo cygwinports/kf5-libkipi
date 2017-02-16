@@ -1,7 +1,7 @@
 inherit kf5
 
 NAME="kf5-libkipi"
-VERSION=16.08.2
+VERSION=16.08.3
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="KDE RAW graphics library"
