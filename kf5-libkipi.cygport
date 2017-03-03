@@ -21,7 +21,7 @@ libKF5Kipi_common_CONTENTS="
 	usr/share/icons/hicolor/*/apps/kipi.*
 	usr/share/kservicetypes5/kipiplugin.desktop
 "
-libKF5Kipi_devel_REQUIRES="libKF5XmlGui-devel libKF5Service-devel libKF5ConfigCore-devel libQt5Gui-devel"
+libKF5Kipi_devel_REQUIRES="libKF5XmlGui-devel libKF5Service-devel libKF5Config-devel libQt5Gui-devel"
 libKF5Kipi_devel_CONTENTS="
 	usr/include/KF5/KIPI/
 	usr/include/KF5/libkipi_version.h
