@@ -1,7 +1,7 @@
 inherit kf5
 
 NAME="kf5-libkipi"
-VERSION=16.08.3
+VERSION=17.04.3
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="KDE RAW graphics library"
@@ -10,10 +10,10 @@ RAW picture files."
 
 PATCH_URI="16.08-soversion.patch"
 
-PKG_NAMES="libKF5Kipi31 libKF5Kipi-common libKF5Kipi-devel"
-libKF5Kipi31_REQUIRES="libKF5Kipi-common"
-libKF5Kipi31_CONTENTS="
-	usr/bin/cygKF5Kipi-31.dll
+PKG_NAMES="libKF5Kipi32 libKF5Kipi-common libKF5Kipi-devel"
+libKF5Kipi32_REQUIRES="libKF5Kipi-common"
+libKF5Kipi32_CONTENTS="
+	usr/bin/cygKF5Kipi-32.dll
 "
 libKF5Kipi_common_CONTENTS="
 	etc/postinstall/
